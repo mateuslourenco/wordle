@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Wordle"; 
+  src: url("/fonts/karnakcondensed-normal-700.woff") format("woff");
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  margin-top: 5px;
+}
+
+.titulo {
+  font-family: "wordle", Arial, sans-serif;;
+}
+
+.espacamento-hr {
+  margin-top: 8px;
+}
+
+.tabuleiro {
+  margin: auto;
+  margin-top: 120px;
+  width: 330px;
+  height: 400px;
+}
+
+.linha {
+  height: 67px;
+}
+.quadrado-letra {
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  border: 2px solid #d3d6da;
+  margin-bottom: 5px;
+  line-height: 62px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.letra-errada {
+  background-color: #787c7e;
+  border: 2px solid #787c7e;
+}
+
+.posicao-errada {
+  background-color: #c9b458;
+  border: 2px solid #c9b458;
+}
+
+.letra-certa {
+  background-color: #6aaa64;
+  border: 2px solid #6aaa64;
+}
+
+.letra-sem-confirmacao {
+  border: 2px solid #878a8c;
+  color: #000
+}
