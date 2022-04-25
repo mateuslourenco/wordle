@@ -5,57 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Wordle</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Wordle</title>
   </head>
   <body>
-    <div class="container">
+    <header>
       <h1 class="titulo">Wordle</h1>
-      <hr class="espacamento-hr" />
+    </header>
+    <div class="container">
       <div class="tabuleiro">
         <div id="linha-1" class="linha">
-          <div class="quadrado-letra letra-errada">W</div>
-          <div class="quadrado-letra letra-errada">O</div>
-          <div class="quadrado-letra letra-errada">R</div>
-          <div class="quadrado-letra letra-certa">L</div>
-          <div class="quadrado-letra letra-errada">D</div>
+          <div class="letra-tabuleiro letra-tabuleiro-errada">W</div>
+          <div class="letra-tabuleiro letra-tabuleiro-errada">O</div>
+          <div class="letra-tabuleiro letra-tabuleiro-errada">R</div>
+          <div class="letra-tabuleiro letra-tabuleiro-certa">L</div>
+          <div class="letra-tabuleiro letra-tabuleiro-errada">D</div>
         </div>
         <div id="linha-2" class="linha">
-          <div class="quadrado-letra posicao-errada">A</div>
-          <div class="quadrado-letra letra-errada">P</div>
-          <div class="quadrado-letra letra-errada">P</div>
-          <div class="quadrado-letra letra-certa">L</div>
-          <div class="quadrado-letra letra-errada">E</div>
+          <div class="letra-tabuleiro posicao-tabuleiro-errada">A</div>
+          <div class="letra-tabuleiro letra-tabuleiro-errada">P</div>
+          <div class="letra-tabuleiro letra-tabuleiro-errada">P</div>
+          <div class="letra-tabuleiro letra-tabuleiro-certa">L</div>
+          <div class="letra-tabuleiro letra-tabuleiro-errada">E</div>
         </div>
         <div id="linha-3" class="linha">
-          <div class="quadrado-letra letra-sem-confirmacao">F</div>
-          <div class="quadrado-letra letra-sem-confirmacao">A</div>
-          <div class="quadrado-letra letra-sem-confirmacao">U</div>
-          <div class="quadrado-letra letra-sem-confirmacao">L</div>
-          <div class="quadrado-letra letra-sem-confirmacao">T</div>
+          <div class="letra-tabuleiro letra-tabuleiro-sem-confirmacao">F</div>
+          <div class="letra-tabuleiro letra-tabuleiro-sem-confirmacao">A</div>
+          <div class="letra-tabuleiro letra-tabuleiro-sem-confirmacao">U</div>
+          <div class="letra-tabuleiro letra-tabuleiro-sem-confirmacao">L</div>
+          <div class="letra-tabuleiro letra-tabuleiro-sem-confirmacao">T</div>
         </div>
         <div id="linha-4" class="linha">
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
         </div>
         <div id="linha-5" class="linha">
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
         </div>
         <div id="linha-6" class="linha">
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
-          <div class="quadrado-letra"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
+          <div class="letra-tabuleiro"></div>
         </div>
       </div>
-      <div class="teclado"></div>
+      <div class="teclado">
+        <div>
+          <div class="letra-teclado">q</div>
+          <div class="letra-teclado letra-teclado-errada">w</div>
+          <div class="letra-teclado letra-teclado-errada">e</div>
+          <div class="letra-teclado letra-teclado-errada">r</div>
+          <div class="letra-teclado">t</div>
+          <div class="letra-teclado">y</div>
+          <div class="letra-teclado">u</div>
+          <div class="letra-teclado">i</div>
+          <div class="letra-teclado letra-teclado-errada">o</div>
+          <div class="letra-teclado letra-teclado-errada">p</div>
+        </div>
+        <div>
+          <div class="letra-teclado posicao-teclado-errada">a</div>
+          <div class="letra-teclado">s</div>
+          <div class="letra-teclado letra-teclado-errada">d</div>
+          <div class="letra-teclado">f</div>
+          <div class="letra-teclado">g</div>
+          <div class="letra-teclado">h</div>
+          <div class="letra-teclado">j</div>
+          <div class="letra-teclado">k</div>
+          <div class="letra-teclado letra-teclado-certa">l</div>
+        </div>
+        <div>
+          <div class="letra-teclado especial">enter</div>
+          <div class="letra-teclado">z</div>
+          <div class="letra-teclado">x</div>
+          <div class="letra-teclado">c</div>
+          <div class="letra-teclado">v</div>
+          <div class="letra-teclado">b</div>
+          <div class="letra-teclado">n</div>
+          <div class="letra-teclado">m</div>
+          <div class="letra-teclado especial"><i class="fa-solid fa-delete-left"></i></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
